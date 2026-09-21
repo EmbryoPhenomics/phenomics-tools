@@ -34,7 +34,7 @@ window.PHENOMICS_TOOLS = [
     featured: 3
   },
   {
-    name: "egg_detection",
+    name: "Egg Detection",
     tagline: "Detect eggs in microscopy images using convolutional neural networks.",
     category: "Detect & segment",
     kind: "Object detection",
@@ -45,7 +45,7 @@ window.PHENOMICS_TOOLS = [
     featured: 8
   },
   {
-    name: "embryo_segmentation",
+    name: "Embryo Growth",
     tagline: "Segment embryos in microscopy images with pretrained deep-learning models.",
     category: "Detect & segment",
     kind: "Semantic segmentation",
@@ -56,7 +56,7 @@ window.PHENOMICS_TOOLS = [
     featured: 7
   },
   {
-    name: "heartcv",
+    name: "HeartCV",
     tagline: "Measure cardiac activity and heart rate from microscopy video.",
     category: "Measure phenotype",
     kind: "Cardiac phenotyping",
@@ -67,7 +67,7 @@ window.PHENOMICS_TOOLS = [
     featured: 4
   },
   {
-    name: "sparse_opticflow",
+    name: "Sparse Optical Flow",
     tagline: "Quantify movement and activity from video using sparse optical flow.",
     category: "Measure phenotype",
     kind: "Motion analysis",
@@ -78,7 +78,7 @@ window.PHENOMICS_TOOLS = [
     featured: 5
   },
   {
-    name: "dev-resnet",
+    name: "DevResnet",
     tagline: "Deep-learning analysis of developmental phenotype through time.",
     category: "Measure phenotype",
     kind: "Developmental phenotyping",
@@ -89,8 +89,8 @@ window.PHENOMICS_TOOLS = [
     featured: 6
   },
   {
-    name: "embryocv_v2",
-    tagline: "Computer-vision workflows for extracting embryo phenotypes from imagery.",
+    name: "EmbryoCV",
+    tagline: "Computer vision library for a powerful range of embryo phenotype measurement.",
     category: "Measure phenotype",
     kind: "Phenotyping pipeline",
     icon: "measure",
@@ -100,7 +100,7 @@ window.PHENOMICS_TOOLS = [
     featured: 9
   },
   {
-    name: "fast_img_compile",
+    name: "Rapid Image Seq Compilation",
     tagline: "Compile large image sequences efficiently for processing and review.",
     category: "Process imagery",
     kind: "Image utility",
@@ -133,7 +133,7 @@ window.PHENOMICS_TOOLS = [
     featured: 12
   },
   {
-    name: "embryocv_ept_examples",
+    name: "Energy Proxy Trait Examples",
     tagline: "Worked examples connecting embryoCV outputs with downstream analysis.",
     category: "Analyse & validate",
     kind: "Examples & tutorials",
@@ -144,7 +144,7 @@ window.PHENOMICS_TOOLS = [
     featured: 13
   },
   {
-    name: "xymotion-accuracy-testing",
+    name: "Optical FLow XYMotion Accuracy Testing",
     tagline: "Validate the positional accuracy of automated motion systems.",
     category: "Analyse & validate",
     kind: "Validation utility",
