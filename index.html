@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Open tools for image-based phenotyping, experimental control and quantitative biology." />
+    <meta name="theme-color" content="#071a20" />
+    <title>EmbryoPhenomics Tools</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#catalogue">Skip to catalogue</a>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="EmbryoPhenomics tools home">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span><strong>EmbryoPhenomics</strong><small>Open tools</small></span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="#workflow">Workflow</a>
+        <a href="#catalogue">Tools</a>
+        <a href="#about">About</a>
+        <a class="nav-github" href="https://github.com/EmbryoPhenomics" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Open-source phenomics</p>
+          <h1 id="hero-title">From living systems<br />to <span>measurable biology.</span></h1>
+          <p class="hero-lede">Hardware, software and analysis pipelines for automated phenotyping—from image acquisition and environmental control to computer vision and quantitative biological measurements.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#catalogue">Explore the tools <span aria-hidden="true">↓</span></a>
+            <a class="button secondary" href="https://github.com/EmbryoPhenomics" target="_blank" rel="noreferrer">View on GitHub <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+
+        <div class="hero-system" aria-label="Experimental phenomics workflow">
+          <div class="system-label">A connected toolkit</div>
+          <div class="system-track" aria-hidden="true">
+            <span class="track-progress"></span>
+            <span class="track-node n1"></span><span class="track-node n2"></span>
+            <span class="track-node n3"></span><span class="track-node n4"></span>
+            <span class="track-node n5"></span>
+          </div>
+          <div class="system-stages">
+            <button data-filter-shortcut="Acquire & control"><span>01</span><strong>Control</strong><small>Experiments & environments</small></button>
+            <button data-filter-shortcut="Acquire & control"><span>02</span><strong>Acquire</strong><small>Images & video</small></button>
+            <button data-filter-shortcut="Detect & segment"><span>03</span><strong>Detect</strong><small>Organisms & regions</small></button>
+            <button data-filter-shortcut="Measure phenotype"><span>04</span><strong>Measure</strong><small>Traits through time</small></button>
+            <button data-filter-shortcut="Analyse & validate"><span>05</span><strong>Analyse</strong><small>Biological data</small></button>
+          </div>
+          <p>Explore the stages to find relevant tools.</p>
+        </div>
+      </section>
+
+      <section class="workflow" id="workflow" aria-labelledby="workflow-title">
+        <div class="section-heading">
+          <div><p class="eyebrow dark">Find your starting point</p><h2 id="workflow-title">What do you want to do?</h2></div>
+          <p>Move from a biological question to the right open tool—without needing to know the repository name.</p>
+        </div>
+        <div class="intent-grid" id="intent-grid"></div>
+      </section>
+
+      <section class="catalogue" id="catalogue" aria-labelledby="catalogue-title">
+        <div class="catalogue-heading">
+          <div><p class="eyebrow dark">Tool catalogue</p><h2 id="catalogue-title">Explore the ecosystem</h2></div>
+          <p id="result-count" aria-live="polite"></p>
+        </div>
+
+        <div class="catalogue-controls" role="search">
+          <label class="search-box">
+            <span class="sr-only">Search tools</span><span aria-hidden="true">⌕</span>
+            <input id="search-input" type="search" placeholder="Search by tool, task or phenotype…" autocomplete="off" />
+            <kbd>/</kbd>
+          </label>
+          <div class="filters" id="filters" aria-label="Filter tools by category"></div>
+          <label class="sort-control">Sort
+            <select id="sort-select"><option value="featured">Featured</option><option value="name">Name A–Z</option></select>
+          </label>
+        </div>
+
+        <div class="active-query" id="active-query" hidden>
+          <span></span><button type="button" id="clear-search">Clear filters</button>
+        </div>
+        <div class="tool-grid" id="tool-grid"></div>
+        <div class="empty-state" id="empty-state" hidden>
+          <h3>No matching tools</h3><p>Try a broader search or clear the category filter.</p>
+          <button class="button primary" type="button" id="empty-clear">Show all tools</button>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div>
+          <p class="eyebrow">About the collection</p>
+          <h2>Built for biological questions,<br />not just computer vision.</h2>
+        </div>
+        <div>
+          <p>EmbryoPhenomics develops open tools for measuring organisms through images and video. The collection spans experimental hardware, environmental control, scalable processing, phenotype extraction and downstream analysis.</p>
+          <p>Each repository is maintained independently. Check its documentation, status and licence before use.</p>
+          <a class="text-link" href="https://github.com/EmbryoPhenomics" target="_blank" rel="noreferrer">Visit the EmbryoPhenomics organisation <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand compact" href="#top"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><strong>EmbryoPhenomics</strong></a>
+      <p>Open tools for quantitative phenotyping.</p>
+      <a href="https://github.com/EmbryoPhenomics" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
